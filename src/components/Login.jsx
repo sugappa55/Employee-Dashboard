@@ -19,7 +19,7 @@ const {handleAuth}=useContext(authContext)
     console.log(det)
     axios.post("https://reqres.in/api/login",det).then(({data})=>{
        if(data.token)handleAuth(true)
-   navigate(-2)
+   navigate(-1)
     })
   }
 
